@@ -1,0 +1,23 @@
+login.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>App Login</title>
+  <script>
+    function checkPassword() {
+      var pass = document.getElementById("password").value;
+      if(pass === "MySecret123") {   // <-- Change password here
+        window.location.href = "index.html"; // Redirect to main app
+      } else {
+        alert("Wrong password!");
+      }
+    }
+  </script>
+</head>
+<body style="font-family: Arial; text-align: center; margin-top: 100px;">
+  <h2>Enter password to access the app</h2>
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="checkPassword()">Enter</button>
+</body>
+</html>
+if(pass === "GPTNGA123") { 
